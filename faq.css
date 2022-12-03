@@ -1,0 +1,96 @@
+#faq {
+    background-image: url('./image/faq-bg.jpeg');
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 6.25rem 0 6.25rem;
+  }
+.faq-head{
+    color:#ffffff;
+    font-size: 2.25rem;
+    font-family: 'quicksand', sans-serif;
+    display: inline-block;
+    margin: 0px 0px 48px;
+    width:var(561,69)
+}
+
+.faq-head img{
+    height: auto;
+    width: var(78,69)
+}
+
+/* .faq{
+    background-image: url(https://template.labartisan.net/demos/blackfriday/assets/images/bg/faq-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding: 6.25rem 0 6.25rem;
+} */
+
+.faq-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 561px;
+    max-width: 25rem;
+    margin: 0;
+}
+
+.faq-item{
+    align-self:flex-start;
+    background-color: white;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.faq-question{
+    color: black !important;
+    text-decoration: none;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-question ion-icon{
+    color: black;
+    padding: 0.5rem;
+}
+
+.faq-question .ion-remove{
+    display: none;
+}
+
+.faq-answer{
+    overflow: hidden;
+    -webkit-transition: maxheight 1s ease-in-out;
+    -moz-transition: maxheight 1s ease-in-out;
+    -o-transition: maxheight 1s ease-in-out;
+    position: relative;
+    max-height: 0;
+}
+
+.faq-answer p{
+    color: black;
+}
+
+.faq-item:hover .faq-answer{
+    max-height: 500px;
+}
+
+.faq-item:hover .faq-question{
+    color: #c62447;
+}
+
+
+.faq-item:hover .ion-remove{
+    display: block;
+    color: #c62447;
+}
+
+.faq-item:hover .ion-add{
+    display: none;
+}
